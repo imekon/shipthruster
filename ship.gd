@@ -17,7 +17,7 @@ func _fixed_process(delta):
 	 	rotate(-deg2rad(delta * ROTATE_SPEED))
 	
 	if (Input.is_action_pressed("ui_thrust")):
-		apply_impulse(get_pos(), Vector2(0, -ACCELERATION).rotated(get_rot()))
+		apply_impulse(Vector2(), Vector2(0, -ACCELERATION).rotated(get_rot()))
 		
 	var pos = get_pos()
 	if (pos.x < 0):
