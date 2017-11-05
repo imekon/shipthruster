@@ -5,6 +5,8 @@ const ACCELERATION = 5
 
 var size
 
+onready var particles = get_node("Particles2D")
+
 func _ready():
 	size = get_viewport().get_rect().size
 	set_fixed_process(true)
@@ -18,3 +20,6 @@ func _fixed_process(delta):
 	
 	if (Input.is_action_pressed("ui_thrust")):
 		apply_impulse(Vector2(), Vector2(0, -ACCELERATION).rotated(get_rot()))
+		particles.set_emitting(true)
+	else:
+		particles.set_emitting(false)

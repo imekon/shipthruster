@@ -62,4 +62,30 @@ drag_margin/top = 0.2
 drag_margin/right = 0.2
 drag_margin/bottom = 0.2
 
+[node name="Particles2D" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 48 )
+config/amount = 32
+config/lifetime = 2.0
+config/emitting = false
+config/process_mode = 1
+config/local_space = false
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 3.0
+params/final_size = 6.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color = Color( 0.441406, 0.0620728, 0.0620728, 1 )
+
 
